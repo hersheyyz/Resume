@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(124, 124, 124);
+}
+
+.image {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.image img {
+  width: 75%;
+  border: #000 1px solid;
+  border-radius: 10px;
+}
+
+.text {
+  width: 50%;
+  float: left;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: auto;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  padding-right: 10px;
+  margin: 10px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(110, 130, 245);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(110, 130, 245);
+}
+
+/* Style the tab content */
+.tabcontent { 
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* skill tab  */
+.dashboard, .dashboard2{
+  display: flex;
+}
+svg {
+  width: 114px;
+  height: 114px;
+  margin: 1em;
+}
+
+.bg {
+  fill: none;
+  stroke-width: 10px;
+}
+
+[class^="meter-"] {
+  fill: none;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+
+}
+
+#html-number {
+  position: relative;
+  top: 55px;
+  left: 145px;
+}
+
+.meter-1 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 50;
+  stroke: aqua;
+  animation: progress-1 3s ease-out;
+  box-shadow: -3px -3px 7px #000;
+}
+
+@keyframes progress-1 {
+  from {
+    stroke-dashoffset: 360;
+  }
+
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+
+#css-number {
+  position: relative;
+  top: 55px;
+  left: 265px;
+}
+
+.meter-2 {
+  stroke: url(#GradientColor2);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 70;
+  animation: progress-2 2s ease-out;
+}
+
+@keyframes progress-2 {
+  from {
+    stroke-dashoffset: 360;
+  }
+
+  to {
+    stroke-dashoffset: 70;
+  }
+}
+
+#js-number {
+  position: relative;
+  top: 55px;
+  left: 378px;
+}
+
+.meter-3 {
+  stroke: url(#GradientColor);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 100;
+  animation: progress-3 1s ease-out;
+}
+
+@keyframes progress-3 {
+  from {
+    stroke-dashoffset: 360;
+  }
+
+  to {
+    stroke-dashoffset: 250;
+  }
+}
+#c-number {
+  position: relative;
+  top: 205px;
+  left: 145px;
+}
+.meter-4 {
+  stroke-dasharray: 360;
+  stroke-dashoffset: 100;
+  stroke: aqua;
+  animation: progress-4 1s ease-out;
+  box-shadow: -3px -3px 7px #000;
+}
+
+@keyframes progress-4 {
+  from {
+    stroke-dashoffset: 360;
+  }
+
+  to {
+    stroke-dashoffset: 100;
+  }
+}
+#cp-number {
+  position: relative;
+  top: 205px;
+  left: 265px;
+}
+.meter-5 {
+  stroke: url(#GradientColor2);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 160;
+  animation: progress-5 .75s ease-out;
+}
+
+@keyframes progress-5 {
+  from {
+    stroke-dashoffset: 360;
+  }
+
+  to {
+    stroke-dashoffset: 160;
+  }
+}
+#java-number {
+  position: relative;
+  top: 205px;
+  left: 378px;
+}
+.meter-6 {
+  stroke: url(#GradientColor);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 160;
+  animation: progress-6 .5s ease-out;
+}
+
+@keyframes progress-6 {
+  from {
+    stroke-dashoffset: 360;
+  }
+
+  to {
+    stroke-dashoffset: 250;
+  }
+}
+
+
+
+/* education */
+.e-div {
+  margin: 15px;
+  box-shadow: 10px 10px 10px rgb(3, 3, 3, 0.2);
+}
+
+.e-text {
+  width: 75%;
+  float: right;
+}
+
+.e-text h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.e-text h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.e-text h3 {
+  font-size: 10px;
+}
+
+.line {
+  width: 25%;
+  float: right;
+}

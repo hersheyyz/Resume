@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> protocol browser -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--visual area define karta h initial scale ratio set up karta h like desktop pixels ka phone ratio se ratio set karta h -->
+    <title>Harsh </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/05f6bcf2a6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!----------------------Home Page--------------------->
+    <section class="home">
+        <div id="particles-js"></div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <div class="toggle">
+                        <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                    <li style="--i:0;">
+                        <a href="#">
+                            <ion-icon name="home-outline"></ion-icon><span>Home</span>
+                        </a>
+                    </li>
+                    <li style="--i:1;">
+                        <a href="about.html">
+                            <ion-icon name="person-circle-outline"></ion-icon> <span>About me</span>
+                        </a>
+                    </li>
+                    <li style="--i:2;">
+                        <a href="portfolio.html">
+                            <ion-icon name="briefcase-outline"></ion-icon><span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li style="--i:3;">
+                        <a href="hireme.html">
+                            <ion-icon name="mail-outline"></ion-icon><span>Contacts</span>
+                        </a>
+                    </li>
+                    <li style="--i:4;">
+                        <a href="certificate.html">
+                            <ion-icon name="newspaper-outline"></ion-icon><span>Certificate</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header">
+            <!-- <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div> -->
+        </div>
+        <div class="data1">
+            <h1>I, am Harsh <span> Rever </span></h1>
+            <h2>i am a <span class="auto-input"></span></h2>
+            <p>This is my official Portfolio website that shows all
+                <br> Details and work around web development
+            </p>
+            <a href="#" class="button">
+                <span class="button_text">
+                    Download CV
+                </span>
+                <img src="images/cone.png" class="button_cone">
+                <img src="images/torus.png" class="button_torus">
+                <img src="images/icosahedron.png" class="button_ico">
+                <img src="images/sphere.png" class="button_sphere">
+            </a>
+        </div>
+        <div class="images">
+            <img src="" class class="shape">
+            <img src="" class class="me">
+        </div>
+        <!-- autotype text -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".auto-input", {
+                strings: ["Web Designer", "Web Developer", "Diploma Student ", "FreeLancer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true,
+            })
+        // blur while backspacing
+        </script>
+        <!-- background -->
+        <script type="text/javascript" src="particles.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <!-- on scroll indicator -->
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+        <!-- rnd navbar -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script>
+            let toggle = document.querySelector('.toggle');
+            let menu = document.querySelector('.menu');
+
+            toggle.onclick = function () {
+                menu.classList.toggle('active');
+            }
+        </script>
+    </section>
+</body>
+
+</html>
